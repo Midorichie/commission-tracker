@@ -1,0 +1,15 @@
+[project]
+name = "commission-tracker"
+requirements = []
+[contracts.sales-commission]
+path = "contracts/sales-commission.clar"
+depends_on = []
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
